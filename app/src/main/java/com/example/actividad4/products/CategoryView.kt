@@ -3,10 +3,7 @@ package com.example.actividad4.products
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-<<<<<<< HEAD
-=======
 import androidx.compose.foundation.border
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -26,15 +23,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-<<<<<<< HEAD
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.example.actividad4.R
-=======
-import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
 import com.example.actividad4.navigation.Products
 
 
@@ -42,27 +32,17 @@ import com.example.actividad4.navigation.Products
 fun CategoryView(navHostController: NavHostController, categoryRepository: CategoryRepository){
     Card(
         colors = CardDefaults.cardColors(Color.White),
-<<<<<<< HEAD
-        modifier = Modifier.fillMaxWidth()
-=======
         modifier = Modifier
             .fillMaxWidth()
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
     ){
         Column(
             Modifier
                 .fillMaxWidth()
-<<<<<<< HEAD
-                .background(Color.White)
-        ) {
-            LazyRow() {
-=======
                 .background(Color.White),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
             LazyRow(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
                 items(
                     items = categoryRepository.getCategoriesList()
                 ) { product ->
@@ -81,18 +61,11 @@ fun generateCategoryView(
 ){
     Row(
         modifier = Modifier
-<<<<<<< HEAD
-            .clip(RoundedCornerShape(10.dp))
-            .clickable(onClick = {
-                navHostController.navigate(Products(category = name))
-            })
-=======
             .border(2.dp, Color.LightGray, RoundedCornerShape(10.dp))
             .clickable(onClick = {
                 navHostController.navigate(Products(category = name))
             }),
         horizontalArrangement= Arrangement.Center
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
     )
     {
         Column() {

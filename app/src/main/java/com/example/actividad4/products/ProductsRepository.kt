@@ -3,13 +3,6 @@ package com.example.actividad4.products
 import com.example.actividad4.R
 
 class ProductsRepository {
-<<<<<<< HEAD
-    private val productsPerCategory = mapOf(
-        "electronica" to listOf(
-            ProductModel(
-                productName = "iPhone 17 Pro Max",
-                productCost = 40_550f,
-=======
 
     private val productsPerCategory: Map<String, List<ProductModel>> = mapOf(
 
@@ -17,38 +10,23 @@ class ProductsRepository {
             ProductModel(
                 productName = "iPhone 17 Pro Max",
                 productCost = 40550f,
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
                 seller = "Apple",
                 shippingCost = 0f,
                 discountPercent = 15f,
                 starsRate = 4.3f,
                 productImage = R.drawable.iphone17pro
-<<<<<<< HEAD
-
-            ),
-            ProductModel(
-                productName = "MacBook Air 13 pulgadas, M3 10-Core",
-                productCost = 20_810f,
-=======
             ),
             ProductModel(
                 productName = "MacBook Air 13 pulgadas, M3 10-Core",
                 productCost = 20810f,
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
                 seller = "Apple",
                 shippingCost = 0f,
                 discountPercent = 10f,
                 starsRate = 3.2f,
                 productImage = R.drawable.macbook
-<<<<<<< HEAD
-
-            ),
-        ),
-=======
             )
         ),
 
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
         "mobiliario" to listOf(
             ProductModel(
                 productName = "Juego de Oficina color obsidiana",
@@ -72,22 +50,11 @@ class ProductsRepository {
                 productName = "Silla acolchonada gris de terciopelo",
                 productCost = 7700f,
                 seller = "Liverpool Oficial",
-<<<<<<< HEAD
-                productImage = R.drawable.images,
-=======
                 productImage = R.drawable.comfy_chair,
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
                 discountPercent = 0f,
                 starsRate = 4f,
                 shippingCost = 450f
             )
-<<<<<<< HEAD
-        )
-
-    )
-
-    fun getProductsPerCategory(category: String): List<ProductModel>{
-=======
         ),
 
         "automotriz" to listOf(
@@ -152,7 +119,6 @@ class ProductsRepository {
     )
 
     fun getProductsPerCategory(category: String): List<ProductModel> {
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
         return productsPerCategory[category] ?: emptyList()
     }
 }

@@ -21,21 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Actividad4Theme {
                 NavManager()
-                /*Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }*/
             }
         }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Actividad4Theme {
-        NavManager()
     }
 }

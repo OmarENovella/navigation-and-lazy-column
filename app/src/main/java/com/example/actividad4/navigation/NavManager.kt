@@ -13,7 +13,7 @@ import kotlinx.serialization.Serializable
 object CategoriesHome
 
 @Serializable
-data class Products(val category: String)
+data class Products(val category: String, )
 
 @Composable
 fun NavManager(){

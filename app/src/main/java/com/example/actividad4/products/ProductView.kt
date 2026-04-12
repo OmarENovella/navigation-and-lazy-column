@@ -155,7 +155,7 @@ fun RowGeneration(
                     )
 
                     Text("${"%.0f".format(discountPercent)}% OFF",
-                        fontSize = 10.sp,
+                        fontSize = 15.sp,
                         color = Color.Green,
                         fontWeight = FontWeight.Bold
                     )
@@ -195,6 +195,8 @@ fun RowGeneration(
         }
     }
 }
+
+
 
 @Preview(showBackground = true)
 @Composable
