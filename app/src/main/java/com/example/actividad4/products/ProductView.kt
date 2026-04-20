@@ -47,18 +47,15 @@ import com.example.actividad4.R
 <<<<<<< HEAD
 =======
 import kotlin.math.min
->>>>>>> 36d9921 (update: Primera version y respaldo de trabajo en actividad 4 (incompleta))
 
 @Composable
 fun ProductView(product: ProductModel){
     Card(
-<<<<<<< HEAD
         colors = CardDefaults.cardColors(Color.White),
         modifier = Modifier
             .fillMaxWidth()
     ) {
 
-=======
         shape = RectangleShape,
         border = BorderStroke(1.dp, Color.LightGray),
         colors = CardDefaults.cardColors(Color.White),
